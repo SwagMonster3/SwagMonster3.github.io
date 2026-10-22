@@ -381,4 +381,29 @@ footer .logo {
     scroll-behavior: auto !important;
     transition: none !important;
   }
+  
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slightly stronger navbar background while scrolling */
+.navbar.scrolled {
+  background: rgba(9, 9, 9, 0.97);
+  border-bottom-color: #383838;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
