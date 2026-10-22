@@ -1,328 +1,482 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0a0a0a">
-  <meta name="description" content="The portfolio of SwagMonster3 — software development, creative coding and digital design.">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="SwagMonster3: Python, Discord bots, Minecraft externals, UI design, custom mods & plugins. Open for commissions.">
 
-  <title>SwagMonster3 — Digital Portfolio</title>
+  <title>SwagMonster3 | Developer Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="cursor cursor-dot" aria-hidden="true"></div>
-  <div class="cursor cursor-ring" aria-hidden="true"></div>
+  <div class="site-shell" id="home">
 
-  <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand magnetic" href="#top" aria-label="SwagMonster3 home">
-        <span class="brand-mark">S<span>3</span></span>
-        <span class="brand-name">SWAGMONSTER<span>3</span></span>
+    <header class="navbar">
+      <a class="logo" href="#home" aria-label="SwagMonster3 home">
+        SM<span>.</span>
       </a>
 
-      <div class="nav-links">
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
+        <a href="#capabilities">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-      </div>
+      </nav>
 
-      <a class="nav-cta magnetic" href="https://github.com/SwagMonster3" target="_blank" rel="noreferrer">
-        <span>GITHUB</span>
-        <span aria-hidden="true">↗</span>
+      <a class="nav-github"
+         href="https://github.com/SwagMonster3"
+         target="_blank"
+         rel="noopener noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
       </a>
-    </nav>
-  </header>
+    </header>
 
-  <main>
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow reveal">
-          <span class="status-dot"></span>
-          <span>INDEPENDENT DEVELOPER</span>
-          <span class="eyebrow-divider">/</span>
-          <span class="muted">PORTFOLIO 001</span>
-        </div>
-
-        <h1 class="hero-title reveal" id="hero-title">
-          BUILT WITH<br>
-          <span class="title-outline">INTENT.</span>
-          <span class="title-period">NOT NOISE.</span>
-        </h1>
-
-        <p class="hero-description reveal">
-          I build software, experiment with ideas, and create digital
-          experiences with purpose. Always learning. Always refining.
-        </p>
-
-        <div class="hero-actions reveal">
-          <a class="button button-light magnetic" href="#projects">
-            EXPLORE MY WORK <span aria-hidden="true">↘</span>
-          </a>
-          <a class="text-link" href="#about">
-            A LITTLE ABOUT ME <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-
-        <div class="hero-meta reveal">
-          <div>
-            <span class="meta-label">FOCUS</span>
-            <span class="meta-value">SOFTWARE / DESIGN</span>
+    <main>
+      <section class="hero section-wrap">
+        <div class="hero-content reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            PYTHON · UI · BOTS · EXTERNALS · COMMISSIONS
           </div>
-          <div>
-            <span class="meta-label">APPROACH</span>
-            <span class="meta-value">BUILD. BREAK. REFINE.</span>
+
+          <h1>
+            Code that works.<br>
+            <span class="muted-heading">Interfaces that feel right.</span>
+          </h1>
+
+          <p class="hero-description">
+            Discord bots, Minecraft externals, Python tools, clean UI,
+            custom mods and plugins. I take commissions. If you need
+            something built for a server, a game, or a product, message me.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-light" href="#projects">
+              See the work <span aria-hidden="true">↘</span>
+            </a>
+
+            <a class="button button-outline" href="#contact">
+              Hire / commission
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>OPEN FOR COMMISSIONS</span>
+            <a href="#about">SCROLL TO DISCOVER ↓</a>
           </div>
         </div>
-      </div>
 
-      <div class="hero-visual reveal" aria-label="Abstract monochrome sculpture">
-        <div class="visual-topline">
-          <span>FIG. 001 — FORM STUDY</span>
-          <span>01 / 03</span>
-        </div>
+        <div class="hero-art reveal" aria-label="Abstract silver sculpture">
+          <div class="art-label art-label-top">
+            <span>FORM / 001</span>
+            <span>MONOCHROME STUDY</span>
+          </div>
 
-        <div class="art-stage">
+          <div class="orbital orbital-one"></div>
+          <div class="orbital orbital-two"></div>
+          <div class="orbital orbital-three"></div>
+
+          <div class="sculpture">
+            <div class="sculpture-core"></div>
+          </div>
+
           <div class="art-crosshair crosshair-one"></div>
           <div class="art-crosshair crosshair-two"></div>
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <div class="art-orbit orbit-three"></div>
-          <div class="art-core">
-            <div class="core-shine"></div>
+
+          <div class="art-label art-label-bottom">
+            <span>LIGHT</span>
+            <span>MOTION</span>
+            <span>FORM</span>
           </div>
-          <div class="art-line line-one"></div>
-          <div class="art-line line-two"></div>
-          <span class="art-index index-one">X / 001</span>
-          <span class="art-index index-two">FORM IN MOTION</span>
-          <span class="art-coordinate">51° 30' N<br>00° 07' W</span>
         </div>
 
-        <div class="visual-bottomline">
-          <span>MONOCHROME STUDIES</span>
-          <span class="visual-mark">SM<span>3</span></span>
+        <div class="hero-index" aria-hidden="true">
+          <span>SM / PORTFOLIO</span>
+          <span id="year">2026</span>
         </div>
+      </section>
+
+      <div class="status-strip section-wrap reveal">
+        <span class="status-label">CURRENTLY</span>
+        <span class="status-text">Building Minecraft externals · taking commissions for bots, mods & plugins</span>
+        <a class="status-link" href="https://discord.gg/7xC3hcyydy" target="_blank" rel="noopener noreferrer">Join Discord →</a>
       </div>
 
-      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
-        <span class="scroll-line"></span>
-        <span>SCROLL TO EXPLORE</span>
-      </a>
-    </section>
-
-    <section class="ticker" aria-label="Areas of interest">
-      <div class="ticker-track">
-        <span>SOFTWARE DEVELOPMENT</span><i>✳</i>
-        <span>CREATIVE EXPERIMENTS</span><i>✳</i>
-        <span>INTERFACE DESIGN</span><i>✳</i>
-        <span>SOFTWARE DEVELOPMENT</span><i>✳</i>
-        <span>CREATIVE EXPERIMENTS</span><i>✳</i>
-        <span>INTERFACE DESIGN</span><i>✳</i>
-      </div>
-    </section>
-
-    <section class="section container" id="about">
-      <div class="section-heading reveal">
-        <span class="section-number">01 / ABOUT</span>
-        <span class="section-rule"></span>
-        <span class="section-note">THE PERSON BEHIND THE PROJECTS</span>
-      </div>
-
-      <div class="about-grid">
-        <h2 class="about-title reveal">
-          CURIOUS BY<br>
-          <span class="text-muted">DEFAULT.</span>
-        </h2>
+      <section class="about section-wrap section-block" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2>What I actually<br><span>ship.</span></h2>
+        </div>
 
         <div class="about-content reveal">
           <p class="about-lead">
-            Interested in how things work — and how to make them work better.
-          </p>
-          <p>
-            My projects are where problem-solving meets experimentation.
-            From programming tools to exploring interface design, I enjoy
-            taking an idea from a rough concept to something real.
-          </p>
-          <p>
-            I'm focused on building my skills, learning through practice,
-            and creating work that feels considered in both function and form.
+            Python is the core. Discord bots that stay online, automation
+            that does not break, and tools people actually use. I also design
+            interfaces, reverse and build Minecraft externals, and take
+            custom commissions for mods, plugins, and game-side work.
           </p>
 
-          <div class="skill-list" aria-label="Areas I am exploring">
-            <span>PYTHON</span>
-            <span>C++</span>
-            <span>HTML / CSS</span>
-            <span>JAVASCRIPT</span>
-            <span>UI DESIGN</span>
+          <p class="body-copy">
+            Structure first. Readable code. UIs that stay out of the way.
+            If you need something custom: a bot for your server, a plugin,
+            a mod, an external, or a small product surface, I build it
+            and hand it over ready to run.
+          </p>
+
+          <div class="skill-proof" aria-label="Core skills with proof">
+            <div class="skill-row">
+              <span class="skill-name">Python</span>
+              <span class="skill-proof-line">bots, automation, APIs, long-running services</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Discord bots</span>
+              <span class="skill-proof-line">moderation, security, utility, discord.py</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">UI design</span>
+              <span class="skill-proof-line">dark product UIs, hierarchy, web surfaces</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Minecraft tools</span>
+              <span class="skill-proof-line">externals, memory, overlays, custom plugins</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">C++ / RE</span>
+              <span class="skill-proof-line">game memory tools, update-aware architecture</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Commissions</span>
+              <span class="skill-proof-line">custom mods, plugins, bots, tooling on request</span>
+            </div>
           </div>
-          <p class="skill-caption">TOOLS AND AREAS I'M EXPLORING</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section projects-section" id="projects">
-      <div class="container">
+      <section class="capabilities section-wrap section-block" id="capabilities">
         <div class="section-heading reveal">
-          <span class="section-number">02 / SELECTED WORK</span>
-          <span class="section-rule"></span>
-          <span class="section-note">A WORK IN PROGRESS</span>
+          <p class="eyebrow">02 / CAPABILITIES</p>
+          <h2>What you can<br><span>expect.</span></h2>
         </div>
 
-        <div class="projects-intro reveal">
-          <h2>MADE TO<br><span class="text-muted">DO MORE.</span></h2>
-          <p>
-            A selection of builds, experiments and ideas.
-            Each one is another step forward.
-          </p>
+        <div class="cap-grid">
+          <article class="cap-card reveal">
+            <div class="cap-num">01</div>
+            <h3>Python development</h3>
+            <p>
+              Scripts, bots, APIs, and automation. From one-off tools
+              to long-running services with logging, error handling,
+              and structure that holds up after the first deploy.
+            </p>
+          </article>
+
+          <article class="cap-card reveal">
+            <div class="cap-num">02</div>
+            <h3>UI design</h3>
+            <p>
+              Dark, focused interfaces. Layout, hierarchy, spacing,
+              and motion that support the product. Web and tool UIs
+              built to be used, not just looked at.
+            </p>
+          </article>
+
+          <article class="cap-card reveal">
+            <div class="cap-num">03</div>
+            <h3>Discord bots</h3>
+            <p>
+              Full systems: moderation, security, utility, and
+              custom community features. discord.py, designed to
+              stay online and stay maintainable.
+            </p>
+          </article>
+
+          <article class="cap-card reveal">
+            <div class="cap-num">04</div>
+            <h3>Minecraft & game tools</h3>
+            <p>
+              Externals, memory tools, overlays, and custom plugins.
+              Architecture that accounts for updates and real use,
+              not throwaway scripts.
+            </p>
+          </article>
+
+          <article class="cap-card reveal cap-card-wide">
+            <div class="cap-num">05</div>
+            <h3>Custom commissions</h3>
+            <p>
+              Mods, plugins, bots, externals, small product surfaces  - 
+              built to your brief. You describe what you need; I ship
+              working code and clear handoff. Discord is the front door.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section-wrap section-block" id="projects">
+        <div class="projects-heading reveal">
+          <div>
+            <p class="eyebrow">03 / SELECTED WORK</p>
+            <h2>Built and<br><span>running.</span></h2>
+          </div>
+          <p class="projects-note">Shipped work. Commissions and new tools land here as they go live.</p>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card project-featured reveal">
-            <div class="project-art beast-art">
-              <div class="project-art-top">
-                <span>PROJECT_001</span>
-                <span>SOFTWARE / SECURITY</span>
+        <div class="project-grid project-grid-four">
+          <article class="project-card reveal">
+            <div class="project-visual beastguard-visual">
+              <div class="visual-topline">
+                <span>BG / 001</span>
+                <span>DISCORD</span>
               </div>
-
-              <div class="beast-emblem" aria-hidden="true">
-                <div class="beast-shield">
-                  <div class="shield-inner">
-                    <span class="shield-eye"></span>
-                    <span class="shield-eye"></span>
-                    <span class="shield-mouth"></span>
-                  </div>
+              <div class="vis-scene" aria-hidden="true">
+                <div class="bg-ring"></div>
+                <div class="bg-ring bg-ring-2"></div>
+                <div class="shield-symbol">
+                  <svg viewBox="0 0 100 110" fill="none">
+                    <path d="M50 5 L88 20 V49 C88 75 72 94 50 105 C28 94 12 75 12 49 V20 Z"
+                      stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M34 53 L45 64 L67 39"
+                      stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </div>
-                <span class="emblem-ring emblem-ring-one"></span>
-                <span class="emblem-ring emblem-ring-two"></span>
+                <div class="bg-scan"></div>
               </div>
-
-              <div class="project-art-bottom">
-                <span>BG / SYSTEMS</span>
-                <span>01—01</span>
-              </div>
+              <span class="visual-caption">PROTECT · DETECT · DEFEND</span>
             </div>
 
             <div class="project-info">
               <div class="project-title-row">
-                <div>
-                  <span class="project-index">01 — PERSONAL PROJECT</span>
-                  <h3>BeastGuard</h3>
-                </div>
-                <a class="project-arrow magnetic" href="https://github.com/SwagMonster3" target="_blank" rel="noreferrer" aria-label="View BeastGuard-related work on GitHub">↗</a>
+                <h3>BeastGuard</h3>
+                <span class="project-number">01</span>
               </div>
 
+              <p class="project-one-liner">Moderation + threat detection for community servers</p>
+
               <p>
-                A software project focused on building practical tools and
-                developing my programming skills through real implementation.
+                Discord security and management bot. Automated moderation,
+                threat signals, and admin tools so communities stay cleaner
+                without constant manual work.
               </p>
 
               <div class="project-footer">
                 <div class="tag-list">
-                  <span>PYTHON</span>
-                  <span>SOFTWARE</span>
+                  <span>Python</span>
+                  <span>discord.py</span>
+                  <span>Security</span>
                 </div>
-                <a class="project-link" href="https://github.com/SwagMonster3" target="_blank" rel="noreferrer">
-                  VIEW ON GITHUB <span aria-hidden="true">↗</span>
-                </a>
+
+                <a class="project-link"
+                   href="https://github.com/SwagMonster3"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="BeastGuard on GitHub">↗</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-art experiment-art">
-              <div class="project-art-top">
-                <span>PROJECT_002</span>
-                <span>DESIGN / EXPERIMENT</span>
+            <div class="project-visual minecraft-visual">
+              <div class="visual-topline">
+                <span>MC / 002</span>
+                <span>EXTERNAL</span>
               </div>
-
-              <div class="experiment-composition" aria-hidden="true">
-                <div class="experiment-square square-one"></div>
-                <div class="experiment-square square-two"></div>
-                <div class="experiment-circle"></div>
-                <div class="experiment-cross">+</div>
-                <div class="experiment-type">FORM<br>FOLLOWS<br>FUNCTION<span>.</span></div>
+              <div class="vis-scene" aria-hidden="true">
+                <div class="mc-grid"></div>
+                <div class="mc-iso">
+                  <div class="iso-cube iso-a"></div>
+                  <div class="iso-cube iso-b"></div>
+                  <div class="iso-cube iso-c"></div>
+                </div>
+                <div class="mc-reticle">
+                  <span></span><span></span><span></span><span></span>
+                </div>
               </div>
-
-              <div class="project-art-bottom">
-                <span>VISUAL RESEARCH</span>
-                <span>02—01</span>
-              </div>
+              <span class="visual-caption">READ · RENDER · CONTROL</span>
             </div>
 
             <div class="project-info">
               <div class="project-title-row">
-                <div>
-                  <span class="project-index">02 — CREATIVE PRACTICE</span>
-                  <h3>Visual Experiments</h3>
-                </div>
-                <a class="project-arrow magnetic" href="https://github.com/SwagMonster3" target="_blank" rel="noreferrer" aria-label="View creative work on GitHub">↗</a>
+                <h3>Minecraft externals</h3>
+                <span class="project-number">02</span>
               </div>
 
+              <p class="project-one-liner">Memory read, overlays, utility layer, update-aware</p>
+
               <p>
-                Exploring layouts, visual systems and interface concepts
-                through small design challenges and creative experiments.
+                External tools for Minecraft: memory access, ESP-style
+                overlays, and game-side utilities. Built with update cycles
+                and practical use in mind, not one-patch throwaways.
               </p>
 
               <div class="project-footer">
                 <div class="tag-list">
-                  <span>UI DESIGN</span>
-                  <span>CSS</span>
+                  <span>C++</span>
+                  <span>Memory</span>
+                  <span>Game tools</span>
                 </div>
-                <a class="project-link" href="https://github.com/SwagMonster3" target="_blank" rel="noreferrer">
-                  VIEW ON GITHUB <span aria-hidden="true">↗</span>
-                </a>
+                <span class="coming-soon">ACTIVE</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual ui-visual">
+              <div class="visual-topline">
+                <span>UI / 003</span>
+                <span>DESIGN</span>
+              </div>
+              <div class="vis-scene" aria-hidden="true">
+                <div class="ui-window">
+                  <div class="ui-chrome">
+                    <span class="ui-dot d1"></span>
+                    <span class="ui-dot d2"></span>
+                    <span class="ui-dot d3"></span>
+                  </div>
+                  <div class="ui-body">
+                    <div class="ui-sidebar"></div>
+                    <div class="ui-main">
+                      <div class="ui-line w1"></div>
+                      <div class="ui-line w2"></div>
+                      <div class="ui-line w3"></div>
+                      <div class="ui-card"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="visual-caption">LAYOUT · HIERARCHY · MOTION</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3>UI design</h3>
+                <span class="project-number">03</span>
+              </div>
+
+              <p class="project-one-liner">Dark product surfaces, tight hierarchy, web + tools</p>
+
+              <p>
+                Interface work for web and tools. Dark themes, clear
+                spacing, motion that supports the task. From this portfolio
+                to product UIs people use every day.
+              </p>
+
+              <div class="project-footer">
+                <div class="tag-list">
+                  <span>CSS / design</span>
+                  <span>Web</span>
+                  <span>Product UI</span>
+                </div>
+                <span class="coming-soon">ONGOING</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual commissions-visual">
+              <div class="visual-topline">
+                <span>CM / 004</span>
+                <span>CUSTOM</span>
+              </div>
+              <div class="vis-scene" aria-hidden="true">
+                <div class="cm-brief">
+                  <div class="cm-header">
+                    <span class="cm-tag">BRIEF</span>
+                    <span class="cm-status">OPEN</span>
+                  </div>
+                  <div class="cm-rows">
+                    <div class="cm-row"><span></span><span class="fill f1"></span></div>
+                    <div class="cm-row"><span></span><span class="fill f2"></span></div>
+                    <div class="cm-row"><span></span><span class="fill f3"></span></div>
+                  </div>
+                  <div class="cm-footer-bar"></div>
+                </div>
+              </div>
+              <span class="visual-caption">MODS · PLUGINS · BOTS · TOOLS</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3>Custom commissions</h3>
+                <span class="project-number">04</span>
+              </div>
+
+              <p class="project-one-liner">Mods, plugins, bots, externals, built to your brief</p>
+
+              <p>
+                Open for paid and custom work. Minecraft mods and plugins,
+                Discord bots, game tools, small product features. You
+                describe the goal; I ship working code and a clean handoff.
+              </p>
+
+              <div class="project-footer">
+                <div class="tag-list">
+                  <span>Mods</span>
+                  <span>Plugins</span>
+                  <span>Bots</span>
+                </div>
+                <a class="project-link" href="#contact" aria-label="Request a commission">↗</a>
               </div>
             </div>
           </article>
         </div>
+      </section>
 
-        <div class="more-work reveal">
-          <span>MORE EXPERIMENTS ARE IN PROGRESS.</span>
-          <a href="https://github.com/SwagMonster3" target="_blank" rel="noreferrer">
-            EXPLORE GITHUB <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
+      <section class="contact section-wrap section-block" id="contact">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">04 / CONTACT</p>
 
-    <section class="contact-section container" id="contact">
-      <div class="contact-panel reveal">
-        <div class="contact-topline">
-          <span>03 / GET IN TOUCH</span>
-          <span>END OF PAGE — NOT END OF PROCESS</span>
-        </div>
+          <h2>Need something<br><span>built?</span></h2>
 
-        <div class="contact-main">
-          <div>
-            <p class="contact-kicker">HAVE A LOOK AROUND.</p>
-            <h2>THE NEXT IDEA<br>STARTS <span>HERE.</span></h2>
+          <p>
+            Discord is the fastest way in. Bots, mods, plugins, externals,
+            UI, or anything that does not fit a neat box. Message me with
+            what you need and we go from there.
+          </p>
+
+          <div class="contact-actions">
+            <div class="contact-handle">
+              <span class="handle-label">DISCORD</span>
+              <span class="handle-value">swag.03</span>
+            </div>
+
+            <a class="button button-outline"
+               href="https://discord.gg/7xC3hcyydy"
+               target="_blank"
+               rel="noopener noreferrer">
+              Join server <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="button button-light"
+               href="https://github.com/SwagMonster3"
+               target="_blank"
+               rel="noopener noreferrer">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
           </div>
-          <a class="contact-button magnetic" href="https://github.com/SwagMonster3" target="_blank" rel="noreferrer">
-            FIND ME ON GITHUB <span aria-hidden="true">↗</span>
-          </a>
-        </div>
 
-        <div class="contact-bottomline">
-          <span>KEEP BUILDING.</span>
-          <span>KEEP QUESTIONING.</span>
-          <span>KEEP GOING.</span>
-        </div>
-      </div>
-    </section>
-  </main>
+          <p class="contact-for">
+            Bots, mods, plugins, UI, tools, custom commissions.
+          </p>
 
-  <footer class="site-footer container">
-    <a class="footer-brand" href="#top">SWAGMONSTER<span>3</span></a>
-    <span>DESIGNED WITH INTENT.</span>
-    <span>© <span id="year"></span> — ALL EXPERIMENTS ONGOING.</span>
-  </footer>
+          <div class="contact-decoration" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-wrap">
+      <a class="logo" href="#home">SM<span>.</span></a>
+      <p>Designed & built by SwagMonster3 · open for commissions</p>
+      <a href="#home">BACK TO TOP ↑</a>
+    </footer>
+
+  </div>
 </body>
 </html>
