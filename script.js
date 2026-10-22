@@ -1,49 +1,53 @@
 
+"use strict";
+
+// Automatically update the copyright year.
 const yearElement = document.getElementById("year");
 
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
-// Reveal sections and project cards as they enter view.
-const revealElements = document.querySelectorAll(
-  ".section, .project-card"
-);
+// Update the navigation appearance while scrolling.
+const navbar = document.querySelector(".navbar");
 
-revealElements.forEach((element) => {
-  element.classList.add("reveal");
+function updateNavbar() {
+  if (!navbar) return;
+
+  navbar.classList.toggle("scrolled", window.scrollY > 20);
+}
+
+window.addEventListener("scroll", updateNavbar, {
+  passive: true
 });
+
+updateNavbar();
+
+// Reveal elements as they enter the viewport.
+const revealElements = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.12 }
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -25px 0px"
+    }
   );
 
   revealElements.forEach((element) => {
     revealObserver.observe(element);
   });
 } else {
+  // Fallback for older browsers.
   revealElements.forEach((element) => {
     element.classList.add("visible");
   });
 }
-
-// Add a subtle background to the navigation when scrolling.
-const navbar = document.querySelector(".navbar");
-
-function updateNavbar() {
-  if (navbar) {
-    navbar.classList.toggle("scrolled", window.scrollY > 30);
-  }
-}
-
-window.addEventListener("scroll", updateNavbar, { passive: true });
-updateNavbar();
