@@ -4,98 +4,266 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The personal developer portfolio of SwagMonster3.">
-  <title>SwagMonster3 | Developer Portfolio</title>
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="The developer portfolio of SwagMonster3. Exploring code, design and digital experiences.">
+
+  <title>SwagMonster3 — Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home">SM<span>.</span></a>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-    </nav>
-    <a class="nav-button" href="#contact">Let's talk ↗</a>
-  </header>
+  <div class="site-shell" id="home">
 
-  <main>
-    <section class="hero" id="home">
-      <p class="eyebrow"><span class="status-dot"></span> DEVELOPER PORTFOLIO</p>
-      <h1>Building things<br>for the <span>digital world.</span></h1>
-      <p class="intro">
-        Hey, I'm SwagMonster3. I enjoy coding, creating projects,
-        and turning ideas into reality.
-      </p>
-      <div class="hero-buttons">
-        <a class="button primary" href="#projects">Explore my work ↘</a>
-        <a class="button secondary"
-           href="https://github.com/SwagMonster3"
-           target="_blank" rel="noopener noreferrer">My GitHub ↗</a>
-      </div>
-      <div class="hero-footer">
-        <span>DESIGN · CODE · CREATE</span>
-        <a href="#about">SCROLL TO EXPLORE ↓</a>
-      </div>
-    </section>
+    <header class="navbar">
+      <a class="logo" href="#home" aria-label="SwagMonster3 home">
+        SM<span>.</span>
+      </a>
 
-    <section class="section" id="about">
-      <p class="eyebrow">01 / ABOUT ME</p>
-      <h2>A little about <span>what I do.</span></h2>
-      <p class="section-copy">
-        I'm a developer who enjoys experimenting with code,
-        learning new technologies, and building useful things.
-        This is where I'll share what I'm working on.
-      </p>
-      <div class="skills">
-        <span>Python</span>
-        <span>HTML & CSS</span>
-        <span>JavaScript</span>
-        <span>UI Design</span>
-      </div>
-    </section>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <section class="section" id="projects">
-      <p class="eyebrow">02 / SELECTED WORK</p>
-      <h2>Things I've <span>built.</span></h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-number">PROJECT 01</p>
-          <h3>BeastGuard</h3>
-          <p>A Discord bot and security project.</p>
-          <div class="project-bottom">
-            <span>Python / Security</span>
-            <a href="https://github.com/SwagMonster3"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="View BeastGuard on GitHub">↗</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <p class="project-number">PROJECT 02</p>
-          <h3>More coming soon</h3>
-          <p>New ideas, experiments and projects in progress.</p>
-          <div class="project-bottom">
-            <span>In development</span>
-            <span>✳</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <p class="eyebrow">03 / GET IN TOUCH</p>
-      <h2>Have an idea?<br><span>Let's build it.</span></h2>
-      <a class="button primary"
+      <a class="nav-github"
          href="https://github.com/SwagMonster3"
-         target="_blank" rel="noopener noreferrer">Find me on GitHub ↗</a>
-    </section>
-  </main>
+         target="_blank"
+         rel="noopener noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </header>
 
-  <footer>
-    <a class="logo" href="#home">SM<span>.</span></a>
-    <p>Designed & built by SwagMonster3.</p>
-    <p>© <span id="year">2026</span></p>
-  </footer>
+    <main>
+      <section class="hero section-wrap">
+        <div class="hero-content reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            DEVELOPER · BUILDER · CREATOR
+          </div>
+
+          <h1>
+            Turning ideas<br>
+            <span class="muted-heading">into reality.</span>
+          </h1>
+
+          <p class="hero-description">
+            I build digital experiences, experiment with code,
+            and create projects that turn ideas into something real.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-light" href="#projects">
+              Explore my work <span aria-hidden="true">↘</span>
+            </a>
+
+            <a class="button button-outline"
+               href="https://github.com/SwagMonster3"
+               target="_blank"
+               rel="noopener noreferrer">
+              Visit GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>BASED IN THE DIGITAL WORLD</span>
+            <a href="#about">SCROLL TO DISCOVER ↓</a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-label="Abstract silver sculpture">
+          <div class="art-label art-label-top">
+            <span>FORM / 001</span>
+            <span>MONOCHROME STUDY</span>
+          </div>
+
+          <div class="orbital orbital-one"></div>
+          <div class="orbital orbital-two"></div>
+          <div class="orbital orbital-three"></div>
+
+          <div class="sculpture">
+            <div class="sculpture-core"></div>
+          </div>
+
+          <div class="art-crosshair crosshair-one"></div>
+          <div class="art-crosshair crosshair-two"></div>
+
+          <div class="art-label art-label-bottom">
+            <span>LIGHT</span>
+            <span>MOTION</span>
+            <span>FORM</span>
+          </div>
+        </div>
+
+        <div class="hero-index">
+          <span>PORTFOLIO</span>
+          <span>© <span id="year">2026</span></span>
+        </div>
+      </section>
+
+      <section class="about section-wrap section-block" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2>Curiosity drives<br>the <span>creation.</span></h2>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="about-lead">
+            I'm a developer who enjoys figuring out how things work
+            and building things of my own.
+          </p>
+
+          <p class="body-copy">
+            From coding projects to experimenting with interface design,
+            I'm always looking for something new to learn, improve or create.
+            This portfolio is a home for the things I'm building along the way.
+          </p>
+
+          <div class="skill-list" aria-label="Technologies and interests">
+            <span>Python</span>
+            <span>HTML & CSS</span>
+            <span>JavaScript</span>
+            <span>UI Design</span>
+            <span>Problem Solving</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-wrap section-block" id="projects">
+        <div class="projects-heading reveal">
+          <div>
+            <p class="eyebrow">02 / SELECTED WORK</p>
+            <h2>Built with <span>purpose.</span></h2>
+          </div>
+          <p class="projects-note">A selection of projects and experiments.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-visual beastguard-visual">
+              <div class="visual-topline">
+                <span>BG / 001</span>
+                <span>SECURITY</span>
+              </div>
+
+              <div class="shield-symbol" aria-hidden="true">
+                <svg viewBox="0 0 100 110" fill="none">
+                  <path d="M50 5 L88 20 V49 C88 75 72 94 50 105 C28 94 12 75 12 49 V20 Z"
+                    stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M34 53 L45 64 L67 39"
+                    stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+
+              <span class="visual-caption">PROTECT · DETECT · DEFEND</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3>BeastGuard</h3>
+                <span class="project-number">01</span>
+              </div>
+
+              <p>
+                A Discord bot and security project focused on creating
+                a safer, better-managed community.
+              </p>
+
+              <div class="project-footer">
+                <div class="tag-list">
+                  <span>Python</span>
+                  <span>Discord</span>
+                </div>
+
+                <a class="project-link"
+                   href="https://github.com/SwagMonster3"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Find BeastGuard on GitHub">↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual experiments-visual">
+              <div class="visual-topline">
+                <span>EXP / 002</span>
+                <span>EXPLORATION</span>
+              </div>
+
+              <div class="experiment-symbol" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <span class="visual-caption">IDEAS IN PROGRESS</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3>Creative experiments</h3>
+                <span class="project-number">02</span>
+              </div>
+
+              <p>
+                A growing collection of coding experiments, interface
+                concepts and ideas worth exploring.
+              </p>
+
+              <div class="project-footer">
+                <div class="tag-list">
+                  <span>Creative coding</span>
+                  <span>UI</span>
+                </div>
+                <span class="coming-soon">IN PROGRESS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-wrap section-block" id="contact">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">03 / THE NEXT IDEA</p>
+
+          <h2>Let's make<br><span>something meaningful.</span></h2>
+
+          <p>
+            Interested in what I'm building? Explore my code and follow
+            along with my latest projects on GitHub.
+          </p>
+
+          <a class="button button-light"
+             href="https://github.com/SwagMonster3"
+             target="_blank"
+             rel="noopener noreferrer">
+            Connect on GitHub <span aria-hidden="true">↗</span>
+          </a>
+
+          <div class="contact-decoration" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-wrap">
+      <a class="logo" href="#home">SM<span>.</span></a>
+      <p>Designed & built by SwagMonster3.</p>
+      <a href="#home">BACK TO TOP ↑</a>
+    </footer>
+
+  </div>
 </body>
 </html>
